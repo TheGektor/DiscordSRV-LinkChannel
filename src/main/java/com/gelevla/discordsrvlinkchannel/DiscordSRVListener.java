@@ -15,7 +15,8 @@ public class DiscordSRVListener {
 
     @Subscribe
     public void discordReadyEvent(DiscordReadyEvent event) {
-        DiscordUtil.getJda().addEventListener(new JDAListener(plugin));
+        // DiscordUtil.getJda().addEventListener(new JDAListener(plugin));
+        // JDAListener удалён, прямое взаимодействие с JDA не поддерживается
     }
 
 
